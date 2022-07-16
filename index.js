@@ -2,8 +2,10 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const axios = require("axios");
 
-inquirer
-    .prompt([
+// inquirer
+//     .prompt(
+const questions =
+        [
         {
             type: 'input',
             message: 'What is your project name?',
@@ -44,16 +46,20 @@ inquirer
         //     message: 'What is your email?',
         //     name: 'email'
         // }
-    ])
-    .then((responses) => {
-        
-        // console.log(responses)
+    ]
+
+function writeToFile () {
+
+    inquirer.prompt(questions).then((responses) => {
         const readMeContent = createReadMe(responses);
- 
+        console.log(responses)
+
         fs.writeFile('index.md', readMeContent, (err) =>
-            err ? console.log(err) : console.log('Success')
-        )
-    })
+        err ? console.log(err) : console.log('Success'))
+    }
+)
+}
+
 
 const createReadMe = (responses) =>
 `# ${responses.title}
@@ -74,4 +80,5 @@ ${responses.description}
     
     // `
 
-    
+
+writeToFile()
