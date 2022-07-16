@@ -67,18 +67,33 @@ const createReadMe = (responses) =>
 ## Description
 
 ${responses.description}
-    
-    
-    `
 
-    // `
-    // # ${responses.title}
+## Table of Contents
 
-    // ## Description
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-    // ${responses.description}
-    
-    // `
+## Installation
+
+## Usage
+
+## Credits
+
+## License
+
+## Contributing
+
+## Tests
+
+## Questions
+
+     
+`
 
 
 writeToFile()
