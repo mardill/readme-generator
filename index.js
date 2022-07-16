@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const axios = require("axios");
 
 inquirer
     .prompt([
@@ -45,28 +46,32 @@ inquirer
         // }
     ])
     .then((responses) => {
+        
+        // console.log(responses)
         const readMeContent = createReadMe(responses);
-
+ 
         fs.writeFile('index.md', readMeContent, (err) =>
             err ? console.log(err) : console.log('Success')
         )
     })
 
-function createReadMe(responses) {
-    return
-
-    `
-    # ${resonses.title}
-
-    ## Description
-
-    ${responses.description}
+const createReadMe = (responses) =>
+`# ${responses.title}
     
-    `
-}
-    
+## Description
 
+${responses.description}
+    
     
     `
 
+    // `
+    // # ${responses.title}
 
+    // ## Description
+
+    // ${responses.description}
+    
+    // `
+
+    
