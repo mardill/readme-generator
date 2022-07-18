@@ -1,4 +1,6 @@
 # a
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
     
 ## Description
 
@@ -20,7 +22,7 @@ undefined
 
 ## Usage
 
-d
+c
 
 ## Credits
 
@@ -28,20 +30,21 @@ undefined
 
 ## License
 
+This is covered under the MIT license. 
 
 
 ## Contributing
 
-w
+me
 
 ## Tests
 
-s
+none
 
 ## Questions
 
 ### Github Username
-mardill: https://github.com/mardill
+mardill: [https://github.com/mardill](https://github.com/mardill)
 
 ### Email
 mary

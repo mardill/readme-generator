@@ -26,6 +26,12 @@ const questions =
             name: 'usage'
         },
         {
+            type: 'list',
+            message: 'Which license would you like to use?',
+            choices: ['MIT', 'BSD'],
+            name: 'license'
+        },
+        {
             type: 'input',
             message: 'Who contributed to your project?',
             name: 'contributing'
@@ -51,6 +57,13 @@ function writeToFile() {
 
     inquirer.prompt(questions).then((responses) => {
 
+        if (responses.license === 'MIT') {
+            responses.licenseChoice = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+        }
+        if (responses.license === 'BSD') {
+            responses.licenseChoice = `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`
+        }
+
         const readMeContent = createReadMe(responses);
         console.log(responses)
 
@@ -65,7 +78,9 @@ function writeToFile() {
 
 
 const createReadMe = (responses) =>
-    `# ${responses.title}
+`# ${responses.title}
+
+${responses.licenseChoice}
     
 ## Description
 
@@ -95,6 +110,7 @@ ${responses.credits}
 
 ## License
 
+This is covered under the ${responses.license} license. 
 
 
 ## Contributing
@@ -108,7 +124,7 @@ ${responses.tests}
 ## Questions
 
 ### Github Username
-${responses.username}: https://github.com/${responses.username}
+${responses.username}: [https://github.com/${responses.username}](https://github.com/${responses.username})
 
 ### Email
 ${responses.email}
