@@ -1,10 +1,10 @@
-# Professional Readme Generator
+# Readme Generator
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
     
 ## Description
 
-This application creates a professional readme generator based on prompts. It is easy to use to make the process of writing a readme quick with stylized headings and links to the creators contact information and github url. the prompts can be tweaked by the user using the prompt code and additional information can be added.
+a readme generator
 
 ## Table of Contents
 
@@ -18,24 +18,24 @@ This application creates a professional readme generator based on prompts. It is
 
 ## Installation
 
-clone the applicaiton from github and in your local computer run 'node index.js'
+using node index.js
 
 ## Usage
 
-With this application, a user is able to generate a preformatted readme file from a series of prompts. The user simply types their answer to the prompt and the asnswer is appended to the correspponding section of the readme file that is outputted from this code. 
+user to create a readme
 
 ## Credits
 
-Mary Dillon
+mary
 
 ## License
 
-This is covered under the MIT license. 
+This is covered under the BSD license. 
 
 
 ## Contributing
 
-Mary Dillon
+mary
 
 ## Tests
 
@@ -47,6 +47,6 @@ n/a
 mardill: [https://github.com/mardill](https://github.com/mardill)
 
 ### Email
-mary.dillon09@gmail.com
+mary.dillon@gmail.com
 
      

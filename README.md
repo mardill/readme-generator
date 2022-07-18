@@ -6,6 +6,10 @@
 
 This application creates a professional readme generator based on prompts. It is easy to use to make the process of writing a readme quick with stylized headings and links to the creators contact information and github url. the prompts can be tweaked by the user using the prompt code and additional information can be added.
 
+Example output:
+
+![alt text](images/readme-screenshot.png)
+
 ## Table of Contents
 
 * [Installation](#installation)
