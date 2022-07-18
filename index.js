@@ -98,7 +98,7 @@ ${responses.description}
 
 ## Installation
 
-${responses.instillation}
+${responses.installation}
 
 ## Usage
 
@@ -106,7 +106,7 @@ ${responses.usage}
 
 ## Credits
 
-${responses.credits}
+${responses.contributing}
 
 ## License
 
